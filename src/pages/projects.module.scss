@@ -1,0 +1,53 @@
+h2 {
+  margin-bottom: 3rem;
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  // margin-left: 2rem;
+  margin-top: 1rem;
+  // text-align: center;
+}
+
+.projectContainer > h3 {
+  color: #000000;
+}
+
+.projectTitle {
+  color: #0275d8;
+}
+
+.projectDescription {
+  color: #7b8794;
+  font-style: italic;
+  font-style: 1.1rem;
+}
+
+img:hover {
+  transform: none;
+}
+
+.projectInfo {
+  list-style: circle;
+}
+
+.svgResize {
+  height: 1.75em;
+  width: 2em;
+  margin: 0;
+}
+
+.svgResize:hover {
+  transform: scale(1.25);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}

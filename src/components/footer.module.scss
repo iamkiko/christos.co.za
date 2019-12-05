@@ -1,0 +1,40 @@
+.footer {
+  margin-top: 3rem;
+  // margin-bottom: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  // position: relative;
+  bottom: 0;
+  // padding: 0 5% 0 5%;
+}
+
+.created {
+  flex: 1;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  flex-basis: 33%;
+  flex-direction: row;
+  height: 3rem;
+  padding-top: 0.4rem;
+  margin: 0;
+}
+
+.svgConnect {
+  flex: 0 0 100%;
+  height: 1.5rem;
+}
+
+.svgConnect:hover {
+  transform: scale(1.25);
+}
+
+img:hover {
+  transform: scale(1.35);
+}

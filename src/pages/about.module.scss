@@ -1,0 +1,97 @@
+.christos {
+  color: #486581;
+}
+
+.homepageLink {
+  font-weight: 800;
+}
+
+.intro::after {
+  content: "...";
+  font-size: 50px;
+  color: gold;
+  display: block;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.currentlyWorking {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.learningContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tools {
+  flex: 1;
+  // text-align: center;
+}
+
+.languages {
+  flex: 1;
+  // text-align: center;
+}
+
+.svgResize {
+  height: 1.75em;
+  width: 2em;
+}
+
+.svgResize:hover {
+  transform: scale(1.25);
+}
+
+.courses::before {
+  content: "...";
+  font-size: 50px;
+  color: gold;
+  display: block;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.courses > h3 {
+  padding-top: 3rem;
+}
+
+.courses > ul {
+  list-style: circle;
+  padding-left: 1rem;
+}
+
+.currentlyEnrolled {
+  font-style: italic;
+}
+
+.courses::after {
+  content: "...";
+  font-size: 50px;
+  color: gold;
+  display: block;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.interests {
+  padding-top: 3rem;
+}
+
+.interestsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.svgGoodreads {
+  height: 0.8rem;
+}
+.interestsSection1 {
+  flex: 1;
+}
+
+.interestsSection2 {
+  flex: 1;
+}
