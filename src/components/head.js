@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-import headlogo from "../assets/C.png"
+import headlogo from "../assets/c.png"
 const Head = ({ title }) => {
   const data = useStaticQuery(graphql`
     query {
