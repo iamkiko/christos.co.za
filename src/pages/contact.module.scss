@@ -3,23 +3,20 @@ form {
 }
 
 input {
-  width: 500px;
+  width: 75%;
 }
 
 textarea {
-  width: 500px;
-  height: 100px;
+  width: 75%;
+  height: 100%;
   box-shadow: inset 0 0 2px black;
 }
-// textarea {
-//   box-shadow: #0a6c74;
-// }
 
 button {
+  display: inline-block;
   text-align: center;
   background-color: #0a6c74;
   color: #e0fcff;
-  // color: #f0f4f8;
   padding: 0.5em 0 0.5em 0;
   width: 22.5%;
   height: 20%;
