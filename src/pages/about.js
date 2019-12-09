@@ -38,7 +38,16 @@ const About = () => {
         <h2>
           Who is <span className={aboutStyles.christos}>Christos</span>?
         </h2>
-        <h4>Grab a copy of my CV here</h4>
+        <h4>
+          Grab a copy of my CV{" "}
+          <a
+            href="https://docs.google.com/document/d/1XYzNpnlTp4OCIZy0E4TwuBGTiLvgdjMGYcg-wDG4_KE/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>here</strong>
+          </a>{" "}
+        </h4>
         <h4>
           {" "}
           Find my LinkedIn and other contact information{" "}
