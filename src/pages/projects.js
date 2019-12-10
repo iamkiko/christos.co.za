@@ -22,7 +22,7 @@ const Work = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Source Code{" "}
+            Source Code with instructions{" "}
             <img
               className={projectStyles.svgResize}
               alt="github"
@@ -37,6 +37,16 @@ const Work = () => {
           >
             View Demo
           </a>
+          <hr></hr>
+          <div className={projectStyles.blogLogin}>
+            <p>To test, use the following:</p>
+            <p>
+              <strong>Username:</strong> Guest
+            </p>
+            <p>
+              <strong>Password:</strong> guest
+            </p>
+          </div>
         </div>
         <div>
           <p className={projectStyles.projectDescription}>
