@@ -53,9 +53,9 @@ button {
 
 .submit {
   display: flex;
-  padding-left: 200px;
+  justify-content: center;
   padding-top: 1rem;
-  width: 100%;
+  width: 77%;
 }
 
 .connect {
@@ -70,4 +70,24 @@ button {
 
 .svgConnect:hover {
   transform: scale(1.25);
+}
+
+@media only screen and (max-width: 600px) {
+  .submit {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .button {
+    display: inline-block;
+    text-align: center;
+    background-color: #0a6c74;
+    color: #e0fcff;
+    height: 20%;
+    border-radius: 7.5%;
+    flex-grow: inherit;
+    box-shadow: none;
+  }
 }

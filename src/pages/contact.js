@@ -175,7 +175,7 @@ const Contact = () => {
           <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
           <div className={contactStyles.submit}>
             <button className={contactStyles.button} type="submit">
-              <span>Submit</span>
+              {/* <span>Submit</span> */}Submit
             </button>
           </div>
         </form>
