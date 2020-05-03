@@ -12,15 +12,30 @@ const IndexPage = () => {
       <h3>
         Hello. I am <span className={aboutStyles.christos}>Christos</span>.{" "}
       </h3>
-      <h4>A self-taught full-stack developer living in beautiful Cape Town.</h4>
+      <h4>A self-taught front-end developer living in beautiful Cape Town.</h4>
       <ul>
-        <li>Need a developer?</li>
-        <li>Keen to learn public speaking?</li>
-        <li>Want to say hello?</li>
         <li>
+          I currently work as a software engineer at{" "}
+          <a
+            href="https://leadhome.co.za/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Leadhome</strong>
+          </a>
+          . We build innovative tools for the real estate market and I am one of
+          their front-end developers working on our internal CRM.
+        </li>
+        <li>
+          I am open to new positions so{" "}
           <Link to="/contact" className={aboutStyles.homepageLink}>
-            Get in touch.
+            feel free to get in touch.
           </Link>{" "}
+        </li>
+
+        <li>
+          I occasionally work on the MERN stack, playing around with full stack
+          applications.
         </li>
         <li>
           Just passing through? Check out my{" "}

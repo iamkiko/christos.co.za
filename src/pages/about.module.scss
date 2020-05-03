@@ -95,3 +95,12 @@
 .interestsSection2 {
   flex: 1;
 }
+
+.styledComponents {
+  height: 1.75em;
+  width: 2em;
+}
+
+.styledComponents > img {
+  height: 100%;
+}

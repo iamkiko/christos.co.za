@@ -31,7 +31,7 @@
     "react-google-recaptcha": "^2.0.1",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
-    "simple-icons": "^1.19.1"
+    "simple-icons": "^2.11.0"
   },
   "devDependencies": {
     "env-cmd": "^10.0.1",

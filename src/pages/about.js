@@ -12,6 +12,9 @@ const npm = require("simple-icons/icons/npm.svg")
 const webpack = require("simple-icons/icons/webpack.svg")
 const prettier = require("simple-icons/icons/prettier.svg")
 const eslint = require("simple-icons/icons/eslint.svg")
+const confluence = require("simple-icons/icons/confluence.svg")
+const apollo = require("simple-icons/icons/apollographql.svg")
+const figma = require("simple-icons/icons/figma.svg")
 const trello = require("simple-icons/icons/trello.svg")
 const vscode = require("simple-icons/icons/visualstudiocode.svg")
 const heroku = require("simple-icons/icons/heroku.svg")
@@ -24,6 +27,7 @@ const mongoicon = require("simple-icons/icons/mongodb.svg")
 const graphqlicon = require("simple-icons/icons/graphql.svg")
 const cssicon = require("simple-icons/icons/css3.svg")
 const gatsby = require("simple-icons/icons/gatsby.svg")
+const styledComponents = require("simple-icons/icons/styled-components.svg")
 const jest = require("simple-icons/icons/jest.svg")
 const udemy = require("simple-icons/icons/udemy.svg")
 const udacity = require("simple-icons/icons/udacity.svg")
@@ -41,7 +45,7 @@ const About = () => {
         <h4>
           Grab a copy of my CV{" "}
           <a
-            href="https://docs.google.com/document/d/1XYzNpnlTp4OCIZy0E4TwuBGTiLvgdjMGYcg-wDG4_KE/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1_G_53ObHXvhCfSQL86JLgbXEMtq23H1C/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -60,9 +64,39 @@ const About = () => {
         </p>
 
         <p>
-          I decided to transition into the tech industry and began learning
-          full-stack development in 2018. Before that, I was involved in my
-          field of international relations (BA Hons) for 6 years.
+          I decided to transition into the tech industry after passing the{" "}
+          <a
+            href="https://www.wethinkcode.co.za/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>WeThinkCode</strong>
+          </a>{" "}
+          entry tests in 2017. I began learning full-stack development in 2018.
+          Before that, I was involved in my field of international relations (BA
+          Hons) for 6 years.
+        </p>
+        <p>
+          I currently work as a software engineer at{" "}
+          <a
+            href="https://leadhome.co.za/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Leadhome</strong>
+          </a>
+          . We build innovative tools for the real estate market and I am one of
+          their front-end developers working on our internal CRM.
+        </p>
+        <p>
+          In my spare time, I am studying for Google's{" "}
+          <a
+            href="https://developers.google.com/certification/mobile-web-specialist"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Mobile Web Specialist Course.</strong>
+          </a>
         </p>
         <p>
           You can find my tech-related courses and certifications below,
@@ -164,10 +198,26 @@ const About = () => {
             <li>
               <img
                 className={aboutStyles.svgResize}
+                alt="confluence"
+                src={confluence}
+              ></img>{" "}
+              Confluence
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
                 alt="trello"
                 src={trello}
               ></img>{" "}
               Trello
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
+                alt="figma"
+                src={figma}
+              ></img>{" "}
+              Figma
             </li>
             <li>
               <img
@@ -244,7 +294,15 @@ const About = () => {
                 alt="graphql"
                 src={graphqlicon}
               ></img>{" "}
-              GraphQL
+              GraphQL " "}
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
+                alt="apollo"
+                src={apollo}
+              ></img>{" "}
+              Apollo
             </li>
             <li>
               <img
@@ -261,6 +319,14 @@ const About = () => {
                 src={cssicon}
               ></img>{" "}
               CSS
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
+                alt="styled-components"
+                src={styledComponents}
+              ></img>{" "}
+              Styled Components
             </li>
           </ul>
         </div>
