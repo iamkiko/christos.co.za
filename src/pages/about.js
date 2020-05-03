@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import aboutStyles from "./about.module.scss"
 import expressicon from "../svgs/express.svg"
-
+import fso from "../assets/fso.png"
 //icons
 const babel = require("simple-icons/icons/babel.svg")
 const git = require("simple-icons/icons/git.svg")
@@ -342,7 +342,8 @@ const About = () => {
             >
               <strong>Full Stack Open</strong>
             </a>{" "}
-            by the University of Helsinki (2019)
+            by the University of Helsinki (2019) on{" "}
+            <img className={aboutStyles.svgResize} alt={fso} src={fso}></img>
           </li>
           <li>
             <a
