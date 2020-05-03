@@ -294,7 +294,7 @@ const About = () => {
                 alt="graphql"
                 src={graphqlicon}
               ></img>{" "}
-              GraphQL " "}
+              GraphQL
             </li>
             <li>
               <img
