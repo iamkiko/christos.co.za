@@ -130,7 +130,6 @@ const About = () => {
           </a>
           .
         </p>
-        <p>I cover my journey into coding, in detail, in my blog post here.</p>
       </div>
       <h3 className={aboutStyles.currentlyWorking}>
         Currently working/learning with:
