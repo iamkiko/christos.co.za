@@ -16,11 +16,19 @@ const Header = () => {
 
   return (
     <header className={headerStyles.header}>
-      <h1>
-        <Link className={headerStyles.title} to="/">
-          {data.site.siteMetadata.title}
-        </Link>
-      </h1>
+      <div className={headerStyles.titlePic}>
+        <h1>
+          <Link className={headerStyles.title} to="/">
+            {data.site.siteMetadata.title}
+          </Link>
+        </h1>
+        <img
+          className={headerStyles.mePortrait}
+          src={require("../assets/me.jpg")}
+          alt="me"
+        ></img>
+      </div>
+
       <nav>
         <ul className={headerStyles.navList}>
           <li>

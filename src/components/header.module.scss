@@ -4,6 +4,7 @@
 }
 
 .title {
+  font-family: "IBM Plex Mono", sans-serif;
   color: #000000;
   font-size: 3rem;
   text-decoration: none;
@@ -24,6 +25,7 @@
 }
 
 .nav-item {
+  font-family: "IBM Plex Mono", sans-serif;
   color: #7b8794;
   font-size: 1rem;
   margin-right: 1.3rem;
@@ -43,6 +45,19 @@
 .fa-home {
   padding-top: 30px;
   padding-right: 12px;
+}
+
+.titlePic {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mePortrait {
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+  width: 10%;
+  border-radius: 80%;
 }
 // .container {
 //   position: fixed;

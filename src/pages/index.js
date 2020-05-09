@@ -8,7 +8,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title="Home" />
-      {/* <h2>Hello.</h2> */}
       <h3>
         Hello. I am <span className={aboutStyles.christos}>Christos</span>.{" "}
       </h3>

@@ -39,24 +39,26 @@ const About = () => {
     <Layout>
       <Head title="About" />
       <div className={aboutStyles.intro}>
+        <div className={aboutStyles.Cv}>
+          <h4>
+            Grab a copy of my CV{" "}
+            <a
+              href="https://drive.google.com/file/d/1_G_53ObHXvhCfSQL86JLgbXEMtq23H1C/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>here.</strong>
+            </a>{" "}
+          </h4>
+          <h4>
+            {" "}
+            Find my LinkedIn and other contact information{" "}
+            <Link to="/contact">here.</Link>
+          </h4>
+        </div>
         <h2>
           Who is <span className={aboutStyles.christos}>Christos</span>?
         </h2>
-        <h4>
-          Grab a copy of my CV{" "}
-          <a
-            href="https://drive.google.com/file/d/1_G_53ObHXvhCfSQL86JLgbXEMtq23H1C/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>here</strong>
-          </a>{" "}
-        </h4>
-        <h4>
-          {" "}
-          Find my LinkedIn and other contact information{" "}
-          <Link to="/contact">here</Link>.
-        </h4>
         <p>
           Originally from Cyprus but born in South Africa, I am a young
           professional and eternal learner. Passionate about breaking, learning
