@@ -12,7 +12,7 @@ const github = require("simple-icons/icons/github.svg")
 const linkedin = require("simple-icons/icons/linkedin.svg")
 const stackoverflow = require("simple-icons/icons/stackoverflow.svg")
 const leetcode = require("simple-icons/icons/leetcode.svg")
-const codewars = require("simple-icons/icons/codewars.svg")
+const medium = require("simple-icons/icons/medium.svg")
 const mailto = require("simple-icons/icons/minutemailer.svg")
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
@@ -60,7 +60,7 @@ const Contact = () => {
         <h2>
           Let's <span className={contactStyles.connect}>connect</span>.
         </h2>
-        <div className={contactStyles.connect}>
+        <div>
           <a
             href="https://github.com/iamkiko"
             target="_blank"
@@ -86,6 +86,18 @@ const Contact = () => {
           </a>{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
           <a
+            href="https://medium.com/@itschristos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className={contactStyles.svgConnect}
+              alt={medium}
+              src={medium}
+            />
+          </a>{" "}
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          <a
             href="https://stackoverflow.com/users/6187861/iamkiko"
             target="_blank"
             rel="noopener noreferrer"
@@ -106,18 +118,6 @@ const Contact = () => {
               className={contactStyles.svgConnect}
               alt={leetcode}
               src={leetcode}
-            />
-          </a>{" "}
-          &nbsp; &nbsp; &nbsp; &nbsp;
-          <a
-            href="https://www.codewars.com/users/iamkiko"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className={contactStyles.svgConnect}
-              alt={codewars}
-              src={codewars}
             />
           </a>{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
