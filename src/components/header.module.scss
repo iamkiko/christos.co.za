@@ -50,17 +50,15 @@
 }
 
 .mePortrait:hover {
-  animation-direction: alternate;
-  transition: 0.75s ease;
-  -webkit-transition: 0.75s ease;
-  transition-timing-function: ease-in-out;
   transform: scale(1.5);
-  -webkit-transform: scale(1.75);
 }
 
 .mePortrait {
   display: flex;
   justify-content: flex-end;
+  animation-direction: alternate;
+  transition: 0.75s ease-in-out;
+  transition-timing-function: ease-in-out;
   height: 15%;
   width: 15%;
   border-radius: 80%;
