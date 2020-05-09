@@ -14,6 +14,15 @@
   animation: pulse 10s infinite;
   flex-grow: 3;
 }
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .titlePic {
+    width: 100%;
+  }
+}
 
 @keyframes pulse {
   0% {

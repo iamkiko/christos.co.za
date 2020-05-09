@@ -91,4 +91,8 @@ button {
     flex-grow: inherit;
     box-shadow: none;
   }
+  .links {
+    display: flex;
+    flex-shrink: 3;
+  }
 }

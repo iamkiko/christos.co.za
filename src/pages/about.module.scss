@@ -37,6 +37,17 @@
   flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 600px) {
+  .learningContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .interestsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .tools {
   flex: 1;
   // text-align: center;

@@ -60,7 +60,7 @@ const Contact = () => {
         <h2>
           Let's <span className={contactStyles.connect}>connect</span>.
         </h2>
-        <div>
+        <div className={contactStyles.links}>
           <a
             href="https://github.com/iamkiko"
             target="_blank"
