@@ -24,7 +24,7 @@ const Header = () => {
         </h1>
         <img
           className={headerStyles.mePortrait}
-          src={require("../assets/me.jpg")}
+          src={require("../assets/moi.jpg")}
           alt="me"
         ></img>
       </div>
