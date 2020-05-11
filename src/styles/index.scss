@@ -1,21 +1,18 @@
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
-
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
+
 * {
-  // font-family: "Ubuntu Mono", sans-serif;
   // font-family: "IBM Plex Mono", sans-serif;
   font-family: "Rubik", sans-serif;
 }
 
 html {
-  // font-family: "Roboto Condensed", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
-  // font-family: "Roboto Condensed";
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

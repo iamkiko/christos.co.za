@@ -47,39 +47,29 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <strong>here.</strong>
-            </a>{" "}
+              <strong className={aboutStyles.link}>here</strong>
+            </a>
+            .
           </h4>
           <h4>
             {" "}
             Find my LinkedIn and other contact information{" "}
-            <Link to="/contact">here.</Link>
+            <Link className={aboutStyles.link} to="/contact">
+              here
+            </Link>
+            .
           </h4>
         </div>
         <h2>
-          Who is <span className={aboutStyles.christos}>Christos</span>?
+          <span className={aboutStyles.christos}>Hello</span> 👋
         </h2>
         <p>
-          Originally from Cyprus but born in South Africa, I am a young
-          professional and eternal learner. Passionate about breaking, learning
-          and building web applications using interesting technologies.
+          I am a young professional and curious learner who enjoys breaking,
+          learning and building web applications using interesting technologies.
         </p>
 
         <p>
-          I decided to transition into the tech industry after passing the{" "}
-          <a
-            href="https://www.wethinkcode.co.za/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>WeThinkCode</strong>
-          </a>{" "}
-          entry tests in 2017. I began learning full-stack development in 2018.
-          Before that, I was involved in my field of international relations (BA
-          Hons) for 6 years.
-        </p>
-        <p>
-          I currently work as a software engineer at{" "}
+          Currently, I am working as a software engineer at{" "}
           <a
             href="https://leadhome.co.za/"
             target="_blank"
@@ -89,16 +79,6 @@ const About = () => {
           </a>
           . We build innovative tools for the real estate market and I am one of
           their front-end developers working on our internal CRM.
-        </p>
-        <p>
-          In my spare time, I am studying for Google's{" "}
-          <a
-            href="https://developers.google.com/certification/mobile-web-specialist"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>Mobile Web Specialist Course.</strong>
-          </a>
         </p>
         <p>
           You can find my tech-related courses and certifications below,
