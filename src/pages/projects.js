@@ -115,11 +115,94 @@ const Work = () => {
           </ul>
         </div>
         <div>
+          <h3 className={projectStyles.projectTitle}>Rent A Mate</h3>
+          <img
+            className={projectStyles.image}
+            src={require("../assets/rent-a-mate.png")}
+            alt="rent-a-mate"
+          />
+          <a
+            href="https://github.com/iamkiko/rent-a-mate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source Code{" "}
+            <img
+              className={projectStyles.svgResize}
+              alt="github"
+              src={github}
+            ></img>
+          </a>
+          <br />
+          <a
+            href="https://rent-a-mate.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Deployed version {"    "}
+          </a>
+        </div>
+        <div>
+          <p className={projectStyles.projectDescription}>
+            Rent A Mate (Interview project)
+          </p>
+          <ul className={projectStyles.projectInfo}>
+            <li>Built with Next for the UI, utilizing Server Side Rendering</li>
+            <li>
+              State management using Cookies as the API doesn't cater for
+              multiple fetches and dynamic importing without SSR for
+              user-specific page
+            </li>
+            <li>Styled with styled-components</li>
+            <li>Deployed to Vercel</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className={projectStyles.projectTitle}>Game of Thrones Quiz </h3>
+          <img
+            className={projectStyles.image}
+            src={require("../assets/got-quiz.png")}
+            alt="got-quiz"
+          />
+          <a
+            href="https://github.com/iamkiko/GOT-Quiz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source Code{" "}
+            <img
+              className={projectStyles.svgResize}
+              alt="github"
+              src={github}
+            ></img>
+          </a>
+          <br />
+          <a
+            href="https://got-quiz.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Deployed version {"    "}
+          </a>
+        </div>
+        <div>
+          <p className={projectStyles.projectDescription}>
+            Game of Thrones Season 6 Quiz (Interview project)
+          </p>
+          <ul className={projectStyles.projectInfo}>
+            <li>Built with React for the UI</li>
+            <li>State management using Context API</li>
+            <li>Styled with styled-components</li>
+            <li>Implementation of custom hooks for fetching data from API</li>
+            <li>Deployed to Vercel</li>
+          </ul>
+        </div>
+        <div>
           <h3 className={projectStyles.projectTitle}>Countries API </h3>
           <img
             className={projectStyles.image}
             src={require("../assets/countries.png")}
-            alt="grovetm"
+            alt="countriesAPI"
           />
           <a
             href="https://github.com/iamkiko/Countries-API/"

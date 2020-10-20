@@ -25,7 +25,7 @@ button {
   box-shadow: none;
 }
 
-.button span {
+.button {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -33,7 +33,7 @@ button {
   // background-color: #14919b;
 }
 
-.button span:after {
+.button:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;

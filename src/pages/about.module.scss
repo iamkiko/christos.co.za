@@ -5,6 +5,7 @@
 
 .homepageLink {
   font-weight: 800;
+  color: #4098d7;
 }
 
 .Cv::after {
@@ -64,6 +65,7 @@
 }
 
 .svgResize {
+  padding-top: 4px;
   height: 1.75em;
   width: 2em;
 }
@@ -88,10 +90,6 @@
 .courses > ul {
   list-style: circle;
   padding-left: 1rem;
-}
-
-.currentlyEnrolled {
-  font-style: italic;
 }
 
 .courses::after {

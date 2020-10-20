@@ -57,9 +57,6 @@ const Contact = () => {
     <div>
       <Layout>
         <Head title="Contact" />
-        <h2>
-          Let's <span className={contactStyles.connect}>connect</span>.
-        </h2>
         <div className={contactStyles.links}>
           <a
             href="https://github.com/iamkiko"
@@ -175,7 +172,7 @@ const Contact = () => {
           <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
           <div className={contactStyles.submit}>
             <button className={contactStyles.button} type="submit">
-              {/* <span>Submit</span> */}Submit
+              Submit
             </button>
           </div>
         </form>

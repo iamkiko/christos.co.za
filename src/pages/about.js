@@ -16,7 +16,6 @@ const confluence = require("simple-icons/icons/confluence.svg")
 const apollo = require("simple-icons/icons/apollographql.svg")
 const figma = require("simple-icons/icons/figma.svg")
 const trello = require("simple-icons/icons/trello.svg")
-const vscode = require("simple-icons/icons/visualstudiocode.svg")
 const heroku = require("simple-icons/icons/heroku.svg")
 const netlify = require("simple-icons/icons/netlify.svg")
 const reacticon = require("simple-icons/icons/react.svg")
@@ -33,6 +32,9 @@ const udemy = require("simple-icons/icons/udemy.svg")
 const udacity = require("simple-icons/icons/udacity.svg")
 const ycombinator = require("simple-icons/icons/ycombinator.svg")
 const goodreads = require("simple-icons/icons/goodreads.svg")
+const nextjs = require("simple-icons/icons/next-dot-js.svg")
+const sentry = require("simple-icons/icons/sentry.svg")
+const storybook = require("simple-icons/icons/storybook.svg")
 
 const About = () => {
   return (
@@ -43,7 +45,7 @@ const About = () => {
           <h4>
             Grab a copy of my CV{" "}
             <a
-              href="https://drive.google.com/file/d/1_G_53ObHXvhCfSQL86JLgbXEMtq23H1C/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iEvu7s3--_ZbBS4N8CulR5TpBYG_JGp9/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,13 +66,14 @@ const About = () => {
           <span className={aboutStyles.christos}>Hello</span> 👋
         </h2>
         <p>
-          I am a young professional and curious learner who enjoys breaking,
-          learning and building web applications using interesting technologies.
+          I am a lifelong learner who enjoys building web apps, writing, lifting
+          heaving things, traveling and looking things up on Stack Overflow.
         </p>
 
         <p>
           Currently, I am working as a software engineer at{" "}
           <a
+            className={aboutStyles.link}
             href="https://leadhome.co.za/"
             target="_blank"
             rel="noopener noreferrer"
@@ -78,12 +81,14 @@ const About = () => {
             <strong>Leadhome</strong>
           </a>
           . We build innovative tools for the real estate market and I am one of
-          their front-end developers working on our internal CRM.
+          their front-end engineers working on our internal CRM (Osmosis) using
+          React/GraphQL and our public facing website (NextJS).
         </p>
         <p>
           You can find my tech-related courses and certifications below,
           including the{" "}
           <a
+            className={aboutStyles.link}
             href="https://fullstackopen.com/en"
             target="_blank"
             rel="noopener noreferrer"
@@ -92,6 +97,7 @@ const About = () => {
           </a>{" "}
           by the University of Helsinki and Y Combinator's{" "}
           <a
+            className={aboutStyles.link}
             href="https://www.startupschool.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -101,16 +107,16 @@ const About = () => {
           (2018).
         </p>
         <p>
-          An avid public speaker, I am the Treasurer and a Competent
-          Communicator for{" "}
+          I am an occasional public speaker and was the Treasurer for{" "}
           <a
+            className={aboutStyles.link}
             href="https://grovetoastmasters.co.za"
             target="_blank"
             rel="noopener noreferrer"
           >
             <strong>Grove Toastmasters</strong>
-          </a>
-          .
+          </a>{" "}
+          between 2018 - 2020.
         </p>
       </div>
       <h3 className={aboutStyles.currentlyWorking}>
@@ -163,6 +169,22 @@ const About = () => {
             <li>
               <img
                 className={aboutStyles.svgResize}
+                alt="figma"
+                src={figma}
+              ></img>{" "}
+              Figma
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
+                alt="storybook"
+                src={storybook}
+              ></img>{" "}
+              Storybook
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
                 alt="prettier"
                 src={prettier}
               ></img>{" "}
@@ -195,18 +217,10 @@ const About = () => {
             <li>
               <img
                 className={aboutStyles.svgResize}
-                alt="figma"
-                src={figma}
+                alt="sentry"
+                src={sentry}
               ></img>{" "}
-              Figma
-            </li>
-            <li>
-              <img
-                className={aboutStyles.svgResize}
-                alt="vscode"
-                src={vscode}
-              ></img>{" "}
-              Visual Studio Code
+              Sentry
             </li>
           </ul>
         </div>
@@ -219,7 +233,7 @@ const About = () => {
                 alt="js"
                 src={jsicon}
               ></img>{" "}
-              JavaScript with ES6
+              JavaScript
             </li>
             <li>
               <img
@@ -227,7 +241,15 @@ const About = () => {
                 alt="react"
                 src={reacticon}
               ></img>{" "}
-              React with Hooks
+              React
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
+                alt="nextJS"
+                src={nextjs}
+              ></img>{" "}
+              NextJS
             </li>
             <li>
               <img
@@ -291,7 +313,7 @@ const About = () => {
                 alt="gatsby"
                 src={gatsby}
               ></img>{" "}
-              Gatsby.js
+              Gatsby
             </li>
             <li>
               <img
@@ -307,7 +329,7 @@ const About = () => {
                 alt="styled-components"
                 src={styledComponents}
               ></img>{" "}
-              Styled Components
+              Styled Components (CSS-in-JS)
             </li>
           </ul>
         </div>
@@ -317,6 +339,7 @@ const About = () => {
         <ul>
           <li>
             <a
+              className={aboutStyles.link}
               href="https://fullstackopen.com/en"
               target="_blank"
               rel="noopener noreferrer"
@@ -328,6 +351,7 @@ const About = () => {
           </li>
           <li>
             <a
+              className={aboutStyles.link}
               href="https://classroom.udacity.com/courses/ud272"
               target="_blank"
               rel="noopener noreferrer"
@@ -343,6 +367,7 @@ const About = () => {
           </li>
           <li>
             <a
+              className={aboutStyles.link}
               href="https://classroom.udacity.com/courses/ud123"
               target="_blank"
               rel="noopener noreferrer"
@@ -358,6 +383,7 @@ const About = () => {
           </li>
           <li>
             <a
+              className={aboutStyles.link}
               href="https://www.udemy.com/course/understand-javascript/learn/"
               target="_blank"
               rel="noopener noreferrer"
@@ -373,6 +399,7 @@ const About = () => {
           </li>
           <li>
             <a
+              className={aboutStyles.link}
               href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/"
               target="_blank"
               rel="noopener noreferrer"
@@ -388,6 +415,7 @@ const About = () => {
           </li>
           <li>
             <a
+              className={aboutStyles.link}
               href="https://www.udemy.com/course/understand-javascript/learn/"
               target="_blank"
               rel="noopener noreferrer"
@@ -402,15 +430,16 @@ const About = () => {
             ></img>
           </li>
 
-          <li className={aboutStyles.currentlyEnrolled}>
+          <li>
             <a
+              className={aboutStyles.link}
               href="https://classroom.udacity.com/courses/ud989"
               target="_blank"
               rel="noopener noreferrer"
             >
               <strong>JavaScript Design Patterns</strong>
             </a>{" "}
-            (end-2019/early 2020) - currently enrolled on{" "}
+            (2020)
             <img
               className={aboutStyles.svgResize}
               alt={udacity}
@@ -419,6 +448,7 @@ const About = () => {
           </li>
           <li>
             <a
+              className={aboutStyles.link}
               href="https://classroom.udacity.com/courses/ep245"
               target="_blank"
               rel="noopener noreferrer"
@@ -434,6 +464,7 @@ const About = () => {
           </li>
           <li>
             <a
+              className={aboutStyles.link}
               href="https://www.startupschool.org/"
               target="_blank"
               rel="noopener noreferrer"
@@ -456,6 +487,7 @@ const About = () => {
             <li>
               Reading (
               <a
+                className={aboutStyles.link}
                 href="https://www.goodreads.com/user/show/42114921-kiko"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -479,16 +511,7 @@ const About = () => {
         </div>
         <div className={aboutStyles.interestsSection2}>
           <ul>
-            <li>
-              Public speaking - Treasurer for{" "}
-              <a
-                href="https://grovetoastmasters.co.za"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Grove Toastmasters
-              </a>
-            </li>
+            <li>Public speaking</li>
             <li>Football</li>
             <li>Rugby</li>
             <li>Dogs</li>

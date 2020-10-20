@@ -11,7 +11,7 @@ const IndexPage = () => {
       <h3>
         Hello. I am <span className={aboutStyles.christos}>Christos</span>.{" "}
       </h3>
-      <h4>A self-taught front-end developer living in beautiful Cape Town.</h4>
+      <h4>A self-taught front-end developer living in Cape Town.</h4>
       <ul>
         <li>
           I currently work as a software engineer at{" "}
@@ -23,18 +23,7 @@ const IndexPage = () => {
             <strong>Leadhome</strong>
           </a>
           . We build innovative tools for the real estate market and I am one of
-          their front-end developers working on our internal CRM.
-        </li>
-        <li>
-          I am open to new positions so{" "}
-          <Link to="/contact" className={aboutStyles.homepageLink}>
-            feel free to get in touch.
-          </Link>{" "}
-        </li>
-
-        <li>
-          I occasionally work on the MERN stack, playing around with full stack
-          applications.
+          their front-end engineers.
         </li>
         <li>
           Just passing through? Check out my{" "}
