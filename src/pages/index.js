@@ -14,16 +14,20 @@ const IndexPage = () => {
       <h4>A self-taught front-end developer living in Cape Town.</h4>
       <ul>
         <li>
-          I currently work as a software engineer at{" "}
-          <a
-            href="https://leadhome.co.za/"
+          I currently work as a software developer at{" "}
+          <Link
+            to="https://nona.digital/"
             target="_blank"
-            rel="noopener noreferrer"
+            className={aboutStyles.homepageLink}
           >
-            <strong>Leadhome</strong>
-          </a>
-          . We build innovative tools for the real estate market and I am one of
-          their front-end engineers.
+            <strong>NONA</strong>
+          </Link>
+          .
+        </li>
+        <li>
+          {" "}
+          We are a world-class custom software development studio building
+          elegant, future-proof and scalable software for funded businesses.
         </li>
         <li>
           Just passing through? Check out my{" "}

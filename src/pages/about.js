@@ -42,7 +42,7 @@ const About = () => {
       <Head title="About" />
       <div className={aboutStyles.intro}>
         <div className={aboutStyles.Cv}>
-          <h4>
+          {/* <h4>
             Grab a copy of my CV{" "}
             <a
               href="https://drive.google.com/file/d/1iEvu7s3--_ZbBS4N8CulR5TpBYG_JGp9/view?usp=sharing"
@@ -52,7 +52,7 @@ const About = () => {
               <strong className={aboutStyles.link}>here</strong>
             </a>
             .
-          </h4>
+          </h4> */}
           <h4>
             {" "}
             Find my LinkedIn and other contact information{" "}
@@ -71,18 +71,17 @@ const About = () => {
         </p>
 
         <p>
-          Currently, I am working as a software engineer at{" "}
+          Currently, I am working as a software developer at{" "}
           <a
             className={aboutStyles.link}
-            href="https://leadhome.co.za/"
+            href="https://nona.digital/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong>Leadhome</strong>
+            <strong>NONA</strong>
           </a>
-          . We build innovative tools for the real estate market and I am one of
-          their front-end engineers working on our internal CRM (Osmosis) using
-          React/GraphQL and our public facing website (NextJS).
+          . We are a world-class custom software development studio where we
+          deliver future-proof, scalable tech solutions.
         </p>
         <p>
           You can find my tech-related courses and certifications below,
