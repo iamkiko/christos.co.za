@@ -11,23 +11,23 @@ const IndexPage = () => {
       <h3>
         Hello. I am <span className={aboutStyles.christos}>Christos</span>.{" "}
       </h3>
-      <h4>A self-taught front-end developer living in Cape Town.</h4>
+      <h4>A self-taught full-stack developer living in Cape Town.</h4>
       <ul>
         <li>
-          I currently work as a software developer at{" "}
+          I work as a software developer at{" "}
           <Link
             to="https://nona.digital/"
             target="_blank"
             className={aboutStyles.homepageLink}
           >
-            <strong>NONA</strong>
+            <strong>NONA Digital</strong>
           </Link>
           .
         </li>
         <li>
           {" "}
-          We are a world-class custom software development studio building
-          elegant, future-proof and scalable software for funded businesses.
+          We are a world-class custom software development studio designing &
+          building intuitive software for Fintech companies.
         </li>
         <li>
           Just passing through? Check out my{" "}

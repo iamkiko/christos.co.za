@@ -54,14 +54,9 @@
   }
 }
 
-.tools {
-  flex: 1;
-  // text-align: center;
-}
-
+.tools,
 .languages {
   flex: 1;
-  // text-align: center;
 }
 
 .svgResize {
@@ -103,6 +98,7 @@
 
 .interests {
   padding-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .interestsContainer {
@@ -137,9 +133,3 @@
   width: 20%;
   border-radius: 80%;
 }
-
-// .mePortrait {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-// }

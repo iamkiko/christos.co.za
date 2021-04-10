@@ -42,17 +42,6 @@ const About = () => {
       <Head title="About" />
       <div className={aboutStyles.intro}>
         <div className={aboutStyles.Cv}>
-          {/* <h4>
-            Grab a copy of my CV{" "}
-            <a
-              href="https://drive.google.com/file/d/1iEvu7s3--_ZbBS4N8CulR5TpBYG_JGp9/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong className={aboutStyles.link}>here</strong>
-            </a>
-            .
-          </h4> */}
           <h4>
             {" "}
             Find my LinkedIn and other contact information{" "}
@@ -66,22 +55,23 @@ const About = () => {
           <span className={aboutStyles.christos}>Hello</span> 👋
         </h2>
         <p>
-          I am a lifelong learner who enjoys building web apps, writing, lifting
-          heaving things, traveling and looking things up on Stack Overflow.
+          I am a lifelong learner who enjoys building web apps, terminal
+          tomfoolery, occasional writing, martial arts, traveling and having 67
+          Stack Overflow tabs open at once.
         </p>
 
         <p>
-          Currently, I am working as a software developer at{" "}
+          I work as a software developer at{" "}
           <a
             className={aboutStyles.link}
             href="https://nona.digital/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong>NONA</strong>
+            <strong>NONA Digital</strong>
           </a>
-          . We are a world-class custom software development studio where we
-          deliver future-proof, scalable tech solutions.
+          . We are a world-class custom software development studio designing &
+          building intuitive software for Fintech companies.
         </p>
         <p>
           You can find my tech-related courses and certifications below,
@@ -118,12 +108,10 @@ const About = () => {
           between 2018 - 2020.
         </p>
       </div>
-      <h3 className={aboutStyles.currentlyWorking}>
-        Currently working/learning with:
-      </h3>
+      <h3 className={aboutStyles.currentlyWorking}>🧰 Toolbox</h3>
       <div className={aboutStyles.learningContainer}>
         <div className={aboutStyles.tools}>
-          <h4>Tools</h4>
+          <h4>🔧 Tools</h4>
           <ul>
             <li>
               <img className={aboutStyles.svgResize} alt="git" src={git}></img>{" "}
@@ -224,7 +212,7 @@ const About = () => {
           </ul>
         </div>
         <div className={aboutStyles.languages}>
-          <h4>Languages, Frameworks & Libraries</h4>
+          <h4>💻 Languages & Frameworks</h4>
           <ul>
             <li>
               <img
@@ -334,7 +322,7 @@ const About = () => {
         </div>
       </div>
       <div className={aboutStyles.courses}>
-        <h3> Tech Courses and Certifications</h3>
+        <h3>🥇 Tech Courses and Certifications</h3>
         <ul>
           <li>
             <a
@@ -479,7 +467,7 @@ const About = () => {
           </li>
         </ul>
       </div>
-      <h3 className={aboutStyles.interests}>Personal Interests & Hobbies</h3>
+      <h3 className={aboutStyles.interests}>💡 Personal Interests & Hobbies</h3>
       <div className={aboutStyles.interestsContainer}>
         <div className={aboutStyles.interestsSection1}>
           <ul>
@@ -502,21 +490,20 @@ const About = () => {
             <li>Yoga</li>
             <li>Meditation</li>
             <li>Hiking</li>
-            <li>Meditating</li>
-            <li>Entrepreneurship</li>
-            <li>Volunteering</li>
-            <li>Mentoring</li>
+            <li>Muay Thai</li>
+            <li>Football</li>
+            <li>Boxing</li>
           </ul>
         </div>
         <div className={aboutStyles.interestsSection2}>
           <ul>
             <li>Public speaking</li>
-            <li>Football</li>
-            <li>Rugby</li>
-            <li>Dogs</li>
-            <li>Travel</li>
+            <li>Entrepreneurship</li>
+            <li>Volunteering</li>
+            <li>Mentoring</li>
             <li>Cooking</li>
-            <li>Cryptocurrencies</li>
+            <li>Macroeconomics</li>
+            <li>Blockchain & Cryptocurrencies</li>
           </ul>
         </div>
       </div>
