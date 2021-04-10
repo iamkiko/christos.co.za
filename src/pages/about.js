@@ -52,7 +52,10 @@ const About = () => {
           </h4>
         </div>
         <h2>
-          <span className={aboutStyles.christos}>Hello</span> 👋
+          <span className={aboutStyles.christos}>Hello</span>{" "}
+          <span role="img" aria-label="wave">
+            👋
+          </span>
         </h2>
         <p>
           I am a lifelong learner who enjoys building web apps, terminal
@@ -108,10 +111,20 @@ const About = () => {
           between 2018 - 2020.
         </p>
       </div>
-      <h3 className={aboutStyles.currentlyWorking}>🧰 Toolbox</h3>
+      <h3 className={aboutStyles.currentlyWorking}>
+        <span role="img" aria-label="toolbox">
+          🧰{" "}
+        </span>{" "}
+        Toolbox
+      </h3>
       <div className={aboutStyles.learningContainer}>
         <div className={aboutStyles.tools}>
-          <h4>🔧 Tools</h4>
+          <h4>
+            <span role="img" aria-label="spanner">
+              🔧
+            </span>{" "}
+            Tools
+          </h4>
           <ul>
             <li>
               <img className={aboutStyles.svgResize} alt="git" src={git}></img>{" "}
@@ -212,7 +225,12 @@ const About = () => {
           </ul>
         </div>
         <div className={aboutStyles.languages}>
-          <h4>💻 Languages & Frameworks</h4>
+          <h4>
+            <span role="img" aria-label="laptop">
+              💻
+            </span>{" "}
+            Languages & Frameworks
+          </h4>
           <ul>
             <li>
               <img
@@ -322,7 +340,12 @@ const About = () => {
         </div>
       </div>
       <div className={aboutStyles.courses}>
-        <h3>🥇 Tech Courses and Certifications</h3>
+        <h3>
+          <span role="img" aria-label="medal">
+            🥇
+          </span>{" "}
+          Tech Courses and Certifications
+        </h3>
         <ul>
           <li>
             <a
@@ -467,7 +490,12 @@ const About = () => {
           </li>
         </ul>
       </div>
-      <h3 className={aboutStyles.interests}>💡 Personal Interests & Hobbies</h3>
+      <h3 className={aboutStyles.interests}>
+        <span role="img" aria-label="light-bulb">
+          💡
+        </span>{" "}
+        Personal Interests & Hobbies
+      </h3>
       <div className={aboutStyles.interestsContainer}>
         <div className={aboutStyles.interestsSection1}>
           <ul>
