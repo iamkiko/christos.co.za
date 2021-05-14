@@ -15,7 +15,7 @@ const eslint = require("simple-icons/icons/eslint.svg")
 const confluence = require("simple-icons/icons/confluence.svg")
 const apollo = require("simple-icons/icons/apollographql.svg")
 const figma = require("simple-icons/icons/figma.svg")
-const trello = require("simple-icons/icons/trello.svg")
+const jira = require("simple-icons/icons/jira.svg")
 const heroku = require("simple-icons/icons/heroku.svg")
 const netlify = require("simple-icons/icons/netlify.svg")
 const reacticon = require("simple-icons/icons/react.svg")
@@ -35,6 +35,7 @@ const goodreads = require("simple-icons/icons/goodreads.svg")
 const nextjs = require("simple-icons/icons/next-dot-js.svg")
 const sentry = require("simple-icons/icons/sentry.svg")
 const storybook = require("simple-icons/icons/storybook.svg")
+const aws = require("simple-icons/icons/amazonaws.svg")
 
 const About = () => {
   return (
@@ -79,6 +80,15 @@ const About = () => {
         <p>
           You can find my tech-related courses and certifications below,
           including the{" "}
+          <a
+            className={aboutStyles.link}
+            href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Solutions Architect (Associate)</strong>
+          </a>{" "}
+          by Amazon Web Services, the{" "}
           <a
             className={aboutStyles.link}
             href="https://fullstackopen.com/en"
@@ -126,6 +136,10 @@ const About = () => {
             Tools
           </h4>
           <ul>
+            <li>
+              <img className={aboutStyles.svgResize} alt="aws" src={aws}></img>{" "}
+              AWS
+            </li>
             <li>
               <img className={aboutStyles.svgResize} alt="git" src={git}></img>{" "}
               Git
@@ -209,10 +223,10 @@ const About = () => {
             <li>
               <img
                 className={aboutStyles.svgResize}
-                alt="trello"
-                src={trello}
+                alt="jira"
+                src={jira}
               ></img>{" "}
-              Trello
+              Jira
             </li>
             <li>
               <img
@@ -247,6 +261,14 @@ const About = () => {
                 src={reacticon}
               ></img>{" "}
               React
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
+                alt="react-native"
+                src={reacticon}
+              ></img>{" "}
+              React Native
             </li>
             <li>
               <img
@@ -347,6 +369,18 @@ const About = () => {
           Tech Courses and Certifications
         </h3>
         <ul>
+          <li>
+            <a
+              className={aboutStyles.link}
+              href="https://www.credly.com/badges/b64a301d-23c0-427c-89a1-0b2990a16512"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>AWS Solutions Architect - Associate</strong>
+            </a>{" "}
+            by Amazon Web Services (2021){" "}
+            <img className={aboutStyles.svgResize} alt={aws} src={aws}></img>
+          </li>
           <li>
             <a
               className={aboutStyles.link}

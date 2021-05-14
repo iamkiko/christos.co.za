@@ -30,6 +30,12 @@ const IndexPage = () => {
           building intuitive software for Fintech companies.
         </li>
         <li>
+          {" "}
+          I maintain an active interest in blockchain, Ethereum, elegant
+          full-stack solutions with intuitive UIs and Cloud Engineering,
+          specifically on AWS.
+        </li>
+        <li>
           Just passing through? Check out my{" "}
           <Link to="/blog" className={aboutStyles.homepageLink}>
             blog
