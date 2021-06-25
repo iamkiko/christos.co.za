@@ -1,10 +1,7 @@
-/* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
-@import url("http://fonts.cdnfonts.com/css/nitti");
 
 * {
-  // font-family: "IBM Plex Mono", sans-serif;
-  font-family: "Nitti", sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   font-display: swap;
 }
 
@@ -70,8 +67,14 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0.67em 0;
+}
+ul,
+li,
+a,
+p {
+  font-size: 0.9rem;
 }
 mark {
   background-color: #ff0;
@@ -123,9 +126,9 @@ textarea {
 }
 
 label {
-  text-transform: uppercase;
+  color: #004049;
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 input,

@@ -15,12 +15,13 @@ textarea {
 button {
   display: inline-block;
   text-align: center;
-  background-color: #0a6c74;
-  color: #e0fcff;
+  background-color: #0ca350;
+  color: #fff;
   padding: 0.5em 0 0.5em 0;
   width: 22.5%;
   height: 20%;
-  border-radius: 7.5%;
+  border: 1px #e0fcff solid;
+  border-radius: 6%;
   flex-grow: inherit;
   box-shadow: none;
 }
@@ -29,7 +30,6 @@ button {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
 }
 
 .button:after {
@@ -39,6 +39,11 @@ button {
   top: 0;
   right: -20px;
   transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #18c518;
+  border: 2px #fff2a7 solid;
 }
 
 .button:hover span {
@@ -83,13 +88,22 @@ button {
   .button {
     display: inline-block;
     text-align: center;
-    background-color: #0a6c74;
-    color: #e0fcff;
+    background-color: #0ca350;
+    color: #fff;
+    padding: 0.5em 0 0.5em 0;
+    width: 22.5%;
     height: 20%;
-    border-radius: 7.5%;
+    border: 1px #e0fcff solid;
+    border-radius: 6%;
     flex-grow: inherit;
     box-shadow: none;
   }
+
+  .button:hover {
+    background-color: #18c518;
+    border: 2px #fff2a7 solid;
+  }
+
   .links {
     display: flex;
     flex-shrink: 3;
