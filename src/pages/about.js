@@ -26,7 +26,6 @@ const mongoicon = require("simple-icons/icons/mongodb.svg")
 const graphqlicon = require("simple-icons/icons/graphql.svg")
 const cssicon = require("simple-icons/icons/css3.svg")
 const gatsby = require("simple-icons/icons/gatsby.svg")
-const styledComponents = require("simple-icons/icons/styled-components.svg")
 const jest = require("simple-icons/icons/jest.svg")
 const udemy = require("simple-icons/icons/udemy.svg")
 const udacity = require("simple-icons/icons/udacity.svg")
@@ -36,6 +35,7 @@ const nextjs = require("simple-icons/icons/next-dot-js.svg")
 const sentry = require("simple-icons/icons/sentry.svg")
 const storybook = require("simple-icons/icons/storybook.svg")
 const aws = require("simple-icons/icons/amazonaws.svg")
+const postgresicon = require("simple-icons/icons/postgresql.svg")
 
 const About = () => {
   return (
@@ -74,8 +74,8 @@ const About = () => {
           >
             <strong>NONA Digital</strong>
           </a>
-          . We are a world-class custom software development studio designing &
-          building intuitive software for Fintech companies.
+          . We build pretty badass software for the world's top fintech and
+          blockchain companies.
         </p>
         <p>
           You can find my tech-related courses and certifications below,
@@ -252,7 +252,7 @@ const About = () => {
                 alt="js"
                 src={jsicon}
               ></img>{" "}
-              JavaScript
+              JavaScript/ES6
             </li>
             <li>
               <img
@@ -305,6 +305,14 @@ const About = () => {
             <li>
               <img
                 className={aboutStyles.svgResize}
+                alt="postgres"
+                src={postgresicon}
+              ></img>{" "}
+              PostgreSQL
+            </li>
+            <li>
+              <img
+                className={aboutStyles.svgResize}
                 alt="mongo"
                 src={mongoicon}
               ></img>{" "}
@@ -348,15 +356,7 @@ const About = () => {
                 alt="css"
                 src={cssicon}
               ></img>{" "}
-              CSS
-            </li>
-            <li>
-              <img
-                className={aboutStyles.svgResize}
-                alt="styled-components"
-                src={styledComponents}
-              ></img>{" "}
-              Styled Components (CSS-in-JS)
+              CSS & Styled Components
             </li>
           </ul>
         </div>
@@ -483,7 +483,7 @@ const About = () => {
             >
               <strong>JavaScript Design Patterns</strong>
             </a>{" "}
-            (2020)
+            (2020) on
             <img
               className={aboutStyles.svgResize}
               alt={udacity}
