@@ -58,15 +58,15 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/projects"
-            >
-              Projects
-            </Link>
-          </li>
+//           <li>
+//             <Link
+//               className={headerStyles.navItem}
+//               activeClassName={headerStyles.activeNavItem}
+//               to="/projects"
+//             >
+//               Projects
+//             </Link>
+//           </li>
           <li>
             <Link
               className={headerStyles.navItem}
