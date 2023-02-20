@@ -1,20 +1,29 @@
 h2 {
-  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .projectContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectContainer > h3 {
   color: #000000;
 }
 
+.projectInfo::after {
+  content: "...";
+  font-size: 50px;
+  color: gold;
+  display: block;
+  text-align: center;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+}
+
 .projectTitle {
   color: #0275d8;
+  margin-top: 1.5em;
 }
 
 .projectDescription {
