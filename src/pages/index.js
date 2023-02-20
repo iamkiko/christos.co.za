@@ -3,25 +3,24 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import * as aboutStyles from "./about.module.scss"
 import { IconContext } from "react-icons"
-import { 
+import {
   SiApachekafka,
   SiCss3,
   SiDocker,
   SiExpress,
-  SiJest, 
-  SiJunit5, 
+  SiJest,
+  SiJunit5,
   SiKotlin,
   SiKubernetes,
   SiMaterialui,
   SiNodedotjs,
   SiPostgresql,
-  SiRedux, 
-  SiSpring, 
-  SiTypescript 
-} from 'react-icons/si'
+  SiRedux,
+  SiSpring,
+  SiTypescript,
+} from "react-icons/si"
 import { FaReact } from "react-icons/fa"
-import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb'
-
+import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb"
 
 const IndexPage = () => {
   return (
@@ -37,28 +36,33 @@ const IndexPage = () => {
           </span>{" "}
         </h2>
         <p>
-        I am a self taught AWS certified Solutions Architect and Toastmaster working at {" "}
-        <a
+          I am a self taught AWS certified Solutions Architect and Toastmaster
+          working at{" "}
+          <a
             className={aboutStyles.link}
             href="https://yoco.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <strong>Yoco</strong>
-          </a> as a Full Stack Engineer. 
-          I hold dual citizenship of Cyprus 🇨🇾 and South Africa 🇿🇦 and am an EU 🇪🇺 citizen.
+          </a>{" "}
+          as a Full Stack Engineer.
         </p>
-        <p>I am a vibrant, confident and meticulous individual with experience of problem
-solving under pressure and taking ownership. I love learning and enjoy sharing my
-knowledge. You can find more information on awards, certifications and hobbies
-on my  <a
+        <p>
+          I am a vibrant, confident and meticulous individual with experience of
+          problem solving under pressure and taking ownership. I love learning
+          and enjoy sharing my knowledge. You can find more information on
+          awards, certifications and hobbies on my{" "}
+          <a
             className={aboutStyles.link}
             href="https://yoco.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong>{" "}LinkedIn</strong>
-          </a>, as well as on this page.</p>
+            <strong> LinkedIn</strong>
+          </a>
+          , as well as on this page.
+        </p>
         <p>
           These include my{" "}
           <a
@@ -90,10 +94,18 @@ on my  <a
           >
             <strong>Grove Toastmasters</strong>
           </a>{" "}
-          between 2018 - 2020 as well as their Public Relations officer in 2021 before stepping down during COVID.
+          between 2018 - 2020 as well as their Public Relations officer in 2021
+          before stepping down during COVID.
         </p>
-        <p>On a more personal note, I enjoy lifting heavy things, boxing, football, reading non-fiction, trying out new recipes,
-        hiking, travelling across borders, cryptocurrencies amongst other things.
+        <p>
+          On a more personal note, I enjoy lifting heavy things, boxing,
+          football, reading non-fiction, trying out new recipes, hiking,
+          travelling across borders, cryptocurrencies amongst other things.
+        </p>
+        <p>
+          {" "}
+          I hold dual citizenship of Cyprus 🇨🇾 and South Africa 🇿🇦 and I am an
+          EU 🇪🇺 citizen.
         </p>
         <p>CV available upon request.</p>
       </div>
@@ -107,106 +119,106 @@ on my  <a
         <div className={aboutStyles.languages}>
           <ul className={aboutStyles.listColumn}>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiTypescript />
-              </IconContext.Provider>
-              {" "}Typescript
+              </IconContext.Provider>{" "}
+              Typescript
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <FaReact />
-              </IconContext.Provider>
-              {" "}React
+              </IconContext.Provider>{" "}
+              React
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <TbBrandReactNative />
-              </IconContext.Provider>
-              {" "}React Native
+              </IconContext.Provider>{" "}
+              React Native
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <TbBrandNextjs />
-              </IconContext.Provider>
-              {" "}NextJS
+              </IconContext.Provider>{" "}
+              NextJS
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiRedux />
-              </IconContext.Provider>
-              {" "}Redux
+              </IconContext.Provider>{" "}
+              Redux
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiNodedotjs />
-              </IconContext.Provider>
-              {" "}Node.js
+              </IconContext.Provider>{" "}
+              Node.js
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiExpress />
-              </IconContext.Provider>
-              {" "}Express
+              </IconContext.Provider>{" "}
+              Express
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiApachekafka />
-              </IconContext.Provider>
-              {" "}Apache Kafka
+              </IconContext.Provider>{" "}
+              Apache Kafka
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiDocker />
-              </IconContext.Provider>
-              {" "}Docker
+              </IconContext.Provider>{" "}
+              Docker
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiKotlin />
-              </IconContext.Provider>
-              {" "}Kotlin
+              </IconContext.Provider>{" "}
+              Kotlin
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiSpring />
-              </IconContext.Provider>
-              {" "}Spring Boot
+              </IconContext.Provider>{" "}
+              Spring Boot
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiPostgresql />
-              </IconContext.Provider>
-              {" "}PostgreSQL
+              </IconContext.Provider>{" "}
+              PostgreSQL
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiJunit5 />
-              </IconContext.Provider>
-              {" "}JUnit
+              </IconContext.Provider>{" "}
+              JUnit
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiJest />
-              </IconContext.Provider>
-              {" "}Jest
+              </IconContext.Provider>{" "}
+              Jest
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiKubernetes />
-              </IconContext.Provider>
-              {" "}Kubernetes
+              </IconContext.Provider>{" "}
+              Kubernetes
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiCss3 />
-              </IconContext.Provider>
-              {" "}CSS & Styled Components
+              </IconContext.Provider>{" "}
+              CSS & Styled Components
             </li>
             <li>
-              <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+              <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
                 <SiMaterialui />
-              </IconContext.Provider>
-              {" "}Material UI
+              </IconContext.Provider>{" "}
+              Material UI
             </li>
           </ul>
         </div>
