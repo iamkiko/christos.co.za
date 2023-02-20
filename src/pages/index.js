@@ -28,8 +28,6 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
       <div className={aboutStyles.intro}>
-        <div className={aboutStyles.Cv}>
-        </div>
         <h2>
           <span className={aboutStyles.christos}>
             <span role="img" aria-label="laptop">
@@ -39,14 +37,14 @@ const IndexPage = () => {
           </span>{" "}
         </h2>
         <p>
-        I am a self taught AWS certified Solutions Architect and Toastmaster working at 
+        I am a self taught AWS certified Solutions Architect and Toastmaster working at {" "}
         <a
             className={aboutStyles.link}
             href="https://yoco.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong>{" "}Yoco</strong>
+            <strong>Yoco</strong>
           </a> as a Full Stack Engineer. 
           I hold dual citizenship of Cyprus 🇨🇾 and South Africa 🇿🇦 and am an EU 🇪🇺 citizen.
         </p>
@@ -97,6 +95,7 @@ on my  <a
         <p>On a more personal note, I enjoy lifting heavy things, boxing, football, reading non-fiction, trying out new recipes,
         hiking, travelling across borders, cryptocurrencies amongst other things.
         </p>
+        <p>CV available upon request.</p>
       </div>
       <h3 className={aboutStyles.currentlyWorking}>
         <span role="img" aria-label="toolbox">
