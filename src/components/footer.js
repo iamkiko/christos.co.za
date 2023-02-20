@@ -1,10 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import footerStyles from "./footer.module.scss"
-
-const github = require("simple-icons/icons/github.svg")
-const linkedin = require("simple-icons/icons/linkedin.svg")
-const mailto = require("simple-icons/icons/minutemailer.svg")
+import * as footerStyles from "./footer.module.scss"
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai'
+import { IconContext } from "react-icons"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -16,10 +14,11 @@ const Footer = () => {
       }
     }
   `)
+
   return (
     <footer className={footerStyles.footer}>
       <div className={footerStyles.created}>
-        {data.site.siteMetadata.author} © 2021
+        {data.site.siteMetadata.author} © 2022
       </div>
 
       <div className={footerStyles.connect}>
@@ -28,7 +27,9 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className={footerStyles.svgConnect} alt={github} src={github} />
+        <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+          <AiFillGithub className={footerStyles.svgConnect}/>
+        </IconContext.Provider>
         </a>{" "}
         &nbsp; &nbsp; &nbsp; &nbsp;
         <a
@@ -36,16 +37,17 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            className={footerStyles.svgConnect}
-            alt={linkedin}
-            src={linkedin}
-          />
+        <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+          <AiFillLinkedin className={footerStyles.svgConnect}/>
+        </IconContext.Provider>
         </a>{" "}
         &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="mailto:hello@christos.co.za">
-          <img className={footerStyles.svgConnect} alt={mailto} src={mailto} />
+        <a href="mailto:constantinides.ch@gmail.com">
+        <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+          <AiFillMail className={footerStyles.svgConnect}/>
+        </IconContext.Provider>
         </a>{" "}
+        
       </div>
     </footer>
   )

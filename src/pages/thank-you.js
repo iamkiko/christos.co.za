@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import contactStyles from "./contact.module.scss"
+import * as contactStyles from "./contact.module.scss"
 
 const ThankYouPage = () => (
   <Layout>

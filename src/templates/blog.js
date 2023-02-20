@@ -11,7 +11,7 @@ export const query = graphql`
       title
       publishedDate(formatString: "MMMM Do, YYYY")
       body {
-        json
+        raw
       }
     }
   }

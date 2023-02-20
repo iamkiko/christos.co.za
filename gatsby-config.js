@@ -47,6 +47,7 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+      "gatsby-plugin-image",
         ],
       },
     },

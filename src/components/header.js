@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import headerStyles from "./header.module.scss"
+import * as headerStyles from "./header.module.scss"
 import { FaHome } from "react-icons/fa"
 
 const Header = () => {
@@ -16,18 +16,11 @@ const Header = () => {
 
   return (
     <header className={headerStyles.header}>
-      <div className={headerStyles.titlePic}>
         <h1>
           <Link className={headerStyles.title} to="/">
             {data.site.siteMetadata.title}
           </Link>
         </h1>
-        <img
-          className={headerStyles.mePortrait}
-          src={require("../assets/moi.webp")}
-          alt="me"
-        ></img>
-      </div>
 
       <nav>
         <ul className={headerStyles.navList}>
@@ -44,29 +37,20 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/about"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >
               Contact
             </Link>
           </li>
-//           <li>
-//             <Link
-//               className={headerStyles.navItem}
-//               activeClassName={headerStyles.activeNavItem}
-//               to="/projects"
-//             >
-//               Projects
-//             </Link>
-//           </li>
+          <li>
+            <Link
+            className={headerStyles.navItem}
+          activeClassName={headerStyles.activeNavItem}
+              to="/work"
+            >
+              Work
+            </Link>
+          </li>
           <li>
             <Link
               className={headerStyles.navItem}

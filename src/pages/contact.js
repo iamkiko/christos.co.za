@@ -4,16 +4,10 @@ import { navigate } from "gatsby-link"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import * as contactStyles from "./contact.module.scss"
 
-import contactStyles from "./contact.module.scss"
-
-//icons
-const github = require("simple-icons/icons/github.svg")
-const linkedin = require("simple-icons/icons/linkedin.svg")
-const stackoverflow = require("simple-icons/icons/stackoverflow.svg")
-const leetcode = require("simple-icons/icons/leetcode.svg")
-const medium = require("simple-icons/icons/medium.svg")
-const mailto = require("simple-icons/icons/minutemailer.svg")
+import { AiFillGithub, AiFillLinkedin, AiFillMail, AiFillMediumSquare } from 'react-icons/ai'
+import { IconContext } from "react-icons"
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
 if (typeof RECAPTCHA_KEY === "undefined") {
@@ -63,11 +57,9 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className={contactStyles.svgConnect}
-              alt={github}
-              src={github}
-            />
+           <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+            <AiFillGithub className={contactStyles.svgConnect}/>
+          </IconContext.Provider>
           </a>{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
           <a
@@ -75,11 +67,9 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className={contactStyles.svgConnect}
-              alt={linkedin}
-              src={linkedin}
-            />
+           <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+            <AiFillLinkedin className={contactStyles.svgConnect}/>
+          </IconContext.Provider>
           </a>{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
           <a
@@ -87,46 +77,18 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className={contactStyles.svgConnect}
-              alt={medium}
-              src={medium}
-            />
+           <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+            <AiFillMediumSquare className={contactStyles.svgConnect}/>
+          </IconContext.Provider>
           </a>{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
-          <a
-            href="https://stackoverflow.com/users/6187861/iamkiko"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className={contactStyles.svgConnect}
-              alt={stackoverflow}
-              src={stackoverflow}
-            />
-          </a>{" "}
-          &nbsp; &nbsp; &nbsp; &nbsp;
-          <a
-            href="https://leetcode.com/iamkiko/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className={contactStyles.svgConnect}
-              alt={leetcode}
-              src={leetcode}
-            />
-          </a>{" "}
-          &nbsp; &nbsp; &nbsp; &nbsp;
-          <a href="mailto:hello@christos.co.za">
-            <img
-              className={contactStyles.svgConnect}
-              alt={mailto}
-              src={mailto}
-            />
+          <a href="mailto:constantinides.ch@gmail.com">
+          <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
+            <AiFillMail className={contactStyles.svgConnect}/>
+          </IconContext.Provider>
           </a>{" "}
         </div>
-        <p>Click on any of the images above to go to my profiles.</p>
+        <p>Click on any of the above icons to visit my profiles.</p>
         <p>Alternatively, fire a message in my direction below!</p>
         <p>
           If forms stress you out, pop me an email at{" "}

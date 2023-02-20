@@ -1,7 +1,7 @@
 {
   "name": "Christos.co.za",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Christos' site",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -13,29 +13,35 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@contentful/rich-text-react-renderer": "^13.4.0",
-    "gatsby": "^2.24.82",
-    "gatsby-plugin-react-helmet": "^3.3.14",
+    "@contentful/rich-text-react-renderer": "^15.16.2",
+    "gatsby": "^5.6.1",
+    "gatsby-plugin-react-helmet": "^6.6.0",
     "gatsby-plugin-recaptcha": "^1.0.5",
-    "gatsby-plugin-sass": "^2.3.18",
-    "gatsby-plugin-sharp": "^2.6.43",
+    "gatsby-plugin-sass": "^6.6.0",
+    "gatsby-plugin-sharp": "^5.6.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-remark-images": "^3.3.36",
-    "gatsby-remark-relative-images": "^0.2.3",
-    "gatsby-source-contentful": "^2.3.56",
-    "gatsby-source-filesystem": "^2.3.35",
-    "gatsby-transformer-remark": "^2.8.43",
-    "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "gatsby-remark-images": "^7.6.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-contentful": "^8.6.1",
+    "gatsby-source-filesystem": "^5.6.0",
+    "gatsby-transformer-remark": "^6.6.0",
+    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-google-recaptcha": "^2.1.0",
-    "react-helmet": "^5.2.1",
-    "react-icons": "^3.11.0",
-    "simple-icons": "^3.12.0"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.7.1",
+    "sass-loader": "^13.2.0",
+    "simple-icons": "^8.5.0"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
-    "prettier": "^1.18.2"
+    "prettier": "^2.8.4"
+  },
+  "overrides": {
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.2.0"
+    }
   },
   "repository": {
     "type": "git",

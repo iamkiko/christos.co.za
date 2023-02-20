@@ -1,6 +1,5 @@
 .christos {
   font-family: "IBM Plex Mono", sans-serif;
-  color: #486581;
 }
 
 .homepageLink {
@@ -51,10 +50,7 @@
   .learningContainer {
     display: flex;
     flex-direction: column;
-  }
-  .interestsContainer {
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -67,6 +63,10 @@
   }
 }
 
+.listColumn {
+  column-count: 2;
+}
+
 .svgResize {
   padding-top: 4px;
   height: 1.75em;
@@ -75,63 +75,6 @@
 
 .svgResize:hover {
   transform: scale(1.25);
-}
-
-.courses::before {
-  content: "...";
-  font-size: 50px;
-  color: gold;
-  display: block;
-  text-align: center;
-  letter-spacing: 5px;
-}
-
-.courses > h3 {
-  padding-top: 3rem;
-}
-
-.courses > ul {
-  list-style: circle;
-  padding-left: 1rem;
-}
-
-.courses::after {
-  content: "...";
-  font-size: 50px;
-  color: gold;
-  display: block;
-  text-align: center;
-  letter-spacing: 5px;
-}
-
-.interests {
-  padding-top: 3rem;
-  margin-bottom: 2rem;
-}
-
-.interestsContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.svgGoodreads {
-  height: 0.8rem;
-}
-.interestsSection1 {
-  flex: 1;
-}
-
-.interestsSection2 {
-  flex: 1;
-}
-
-.styledComponents {
-  height: 1.75em;
-  width: 2em;
-}
-
-.styledComponents > img {
-  height: 100%;
 }
 
 .mePortrait {
