@@ -6,7 +6,12 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import * as contactStyles from "./contact.module.scss"
 
-import { AiFillGithub, AiFillLinkedin, AiFillMail, AiFillMediumSquare } from 'react-icons/ai'
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillMail,
+  AiFillMediumSquare,
+} from "react-icons/ai"
 import { IconContext } from "react-icons"
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
@@ -18,7 +23,7 @@ if (typeof RECAPTCHA_KEY === "undefined") {
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 }
 
@@ -26,11 +31,11 @@ const Contact = () => {
   const [state, setState] = useState({})
   const recaptchaRef = createRef()
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
     const recaptchaValue = recaptchaRef.current.getValue()
@@ -44,7 +49,7 @@ const Contact = () => {
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error))
+      .catch((error) => alert(error))
   }
 
   return (
@@ -57,9 +62,9 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-           <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
-            <AiFillGithub className={contactStyles.svgConnect}/>
-          </IconContext.Provider>
+            <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
+              <AiFillGithub className={contactStyles.svgConnect} />
+            </IconContext.Provider>
           </a>{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
           <a
@@ -67,9 +72,9 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-           <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
-            <AiFillLinkedin className={contactStyles.svgConnect}/>
-          </IconContext.Provider>
+            <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
+              <AiFillLinkedin className={contactStyles.svgConnect} />
+            </IconContext.Provider>
           </a>{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
           <a
@@ -77,15 +82,15 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-           <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
-            <AiFillMediumSquare className={contactStyles.svgConnect}/>
-          </IconContext.Provider>
+            <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
+              <AiFillMediumSquare className={contactStyles.svgConnect} />
+            </IconContext.Provider>
           </a>{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
           <a href="mailto:constantinides.ch@gmail.com">
-          <IconContext.Provider value={{ color: 'black', size: '1.5rem' }}>
-            <AiFillMail className={contactStyles.svgConnect}/>
-          </IconContext.Provider>
+            <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
+              <AiFillMail className={contactStyles.svgConnect} />
+            </IconContext.Provider>
           </a>{" "}
         </div>
         <p>Click on any of the above icons to visit my profiles.</p>
