@@ -7,7 +7,7 @@ import Head from "../components/head"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+      allContentfulBlogPost(sort: { publishedDate: DESC }) {
         edges {
           node {
             title
