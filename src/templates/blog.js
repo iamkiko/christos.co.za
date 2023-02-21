@@ -18,7 +18,7 @@ export const query = graphql`
             contentful_id
             __typename
             title
-            file {
+            fixed {
               url
             }
           }
