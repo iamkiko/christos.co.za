@@ -55,7 +55,7 @@ const IndexPage = () => {
           awards, certifications and hobbies on my{" "}
           <a
             className={aboutStyles.link}
-            href="https://yoco.com/"
+            href="https://www.linkedin.com/in/christosc/"
             target="_blank"
             rel="noopener noreferrer"
           >
