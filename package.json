@@ -4,39 +4,39 @@
   "description": "Christos' site",
   "version": "0.1.0",
   "license": "MIT",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "build": "gatsby build",
     "develop": "env-cmd -f .env gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "pnpm develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@contentful/rich-text-react-renderer": "^15.16.2",
-    "gatsby": "^5.9.1",
-    "gatsby-plugin-react-helmet": "^6.6.0",
+    "@contentful/rich-text-react-renderer": "^16.1.6",
+    "gatsby": "^5.16.1",
+    "gatsby-plugin-react-helmet": "^6.16.0",
     "gatsby-plugin-recaptcha": "^1.0.5",
-    "gatsby-plugin-sass": "^6.6.0",
-    "gatsby-plugin-sharp": "^5.6.0",
+    "gatsby-plugin-sass": "^6.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-remark-images": "^7.6.0",
+    "gatsby-remark-images": "^7.16.0",
     "gatsby-remark-relative-images": "^2.0.5",
-    "gatsby-source-contentful": "^8.6.1",
-    "gatsby-source-filesystem": "^5.6.0",
-    "gatsby-transformer-remark": "^6.6.0",
-    "node-sass": "^8.0.0",
+    "gatsby-source-contentful": "^8.17.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-remark": "^6.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-google-recaptcha": "^2.1.0",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.7.1",
-    "sass-loader": "^13.2.0",
-    "simple-icons": "^8.5.0"
+    "react-icons": "^5.6.0",
+    "sass": "^1.98.0",
+    "sass-loader": "^16.0.7",
+    "simple-icons": "^16.12.0"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0",
-    "prettier": "^2.8.4"
+    "env-cmd": "^11.0.0",
+    "prettier": "^3.8.1"
   },
   "overrides": {
     "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {

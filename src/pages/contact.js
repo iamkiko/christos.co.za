@@ -1,6 +1,5 @@
-import React, { useState, createRef } from "react"
-import Recaptcha from "react-google-recaptcha"
-import { navigate } from "gatsby-link"
+import React, { useState } from "react"
+import { navigate } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -14,13 +13,6 @@ import {
 } from "react-icons/ai"
 import { IconContext } from "react-icons"
 
-const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
-if (typeof RECAPTCHA_KEY === "undefined") {
-  throw new Error(`
-  Env var ITE_RECAPTCHA_KEY is undefined!
-  `)
-}
-
 function encode(data) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -29,7 +21,6 @@ function encode(data) {
 
 const Contact = () => {
   const [state, setState] = useState({})
-  const recaptchaRef = createRef()
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -38,13 +29,11 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
-    const recaptchaValue = recaptchaRef.current.getValue()
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        "g-recaptcha-response": recaptchaValue,
         ...state,
       }),
     })
@@ -105,7 +94,6 @@ const Contact = () => {
           method="post"
           action="/thank-you/"
           data-netlify="true"
-          data-netlify-recaptcha="true"
           onSubmit={handleSubmit}
           className={contactStyles.form}
         >
@@ -136,7 +124,6 @@ const Contact = () => {
               <textarea name="message" onChange={handleChange} required />
             </label>
           </p>
-          <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
           <div className={contactStyles.submit}>
             <button className={contactStyles.button} type="submit">
               Submit
