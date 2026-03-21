@@ -5,22 +5,23 @@ import * as aboutStyles from "./about.module.scss"
 import { IconContext } from "react-icons"
 import {
   SiApachekafka,
-  SiCss3,
+  SiCss,
   SiDocker,
   SiExpress,
   SiJest,
   SiJunit5,
   SiKotlin,
   SiKubernetes,
-  SiMaterialui,
+  SiMaterialdesign,
+  SiNextdotjs,
   SiNodedotjs,
+  SiReact,
   SiPostgresql,
   SiRedux,
   SiSpring,
   SiTypescript,
 } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
-import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb"
 
 const IndexPage = () => {
   return (
@@ -132,13 +133,13 @@ const IndexPage = () => {
             </li>
             <li>
               <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
-                <TbBrandReactNative />
+                <SiReact />
               </IconContext.Provider>{" "}
               React Native
             </li>
             <li>
               <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
-                <TbBrandNextjs />
+                <SiNextdotjs />
               </IconContext.Provider>{" "}
               NextJS
             </li>
@@ -210,13 +211,13 @@ const IndexPage = () => {
             </li>
             <li>
               <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
-                <SiCss3 />
+                <SiCss />
               </IconContext.Provider>{" "}
               CSS & Styled Components
             </li>
             <li>
               <IconContext.Provider value={{ color: "black", size: "1.5rem" }}>
-                <SiMaterialui />
+                <SiMaterialdesign />
               </IconContext.Provider>{" "}
               Material UI
             </li>

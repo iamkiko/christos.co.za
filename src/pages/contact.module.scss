@@ -1,4 +1,4 @@
-form {
+.form {
   border-radius: 15px 50px 30px 5px;
 }
 
@@ -17,17 +17,17 @@ form {
   transform: scale(1.25);
 }
 
-input {
+.form input {
   width: 75%;
 }
 
-textarea {
+.form textarea {
   width: 75%;
   height: 100%;
   box-shadow: inset 0 0 2px black;
 }
 
-button {
+.form button {
   display: inline-block;
   text-align: center;
   background-color: #0ca350;
